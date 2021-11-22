@@ -1,0 +1,209 @@
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+/* HEADER */
+header {
+  background: linear-gradient(to right, #44abee, #40a4e9, #3c9de4, #3996de, #378fd9);
+  padding-top: 70px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
+
+h1 {
+  font-size: 36px;
+  color: white;
+  font-weight: 900;
+  font-family: 'Ubuntu';
+}
+
+h1 span {
+  font-size: 55px;
+}
+
+.offer p {
+  font-family: "Open Sans";
+  color: white;
+  font-size: 16px;
+  width: 412px;
+}
+
+.btn {
+  display: block;
+  width: 222px;
+  background-color: #ffd429;
+  font-family: "Montserrat";
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  padding: 19px 0;
+  margin-top: 45px;
+}
+
+.image {
+  width: 520px;
+  height: 520px;
+  margin: 0;
+  margin-top: 70px;
+}
+
+/* PERSPECTIVES */
+.prespectives {
+  padding-top: 110px;
+  padding-bottom: 135px;
+}
+.prespectives-title {
+  font-family: "Ubuntu";
+  text-align: center;
+
+  font-size: 30px;
+}
+.prespectives-list {
+  display: flex; 
+  justify-content: space-between;
+  margin-top: 80px;
+}
+.prespectives-list div:nth-child(1) {
+  background:  url("./images/icons8-time-machine-96.png") no-repeat center top;
+}
+.prespectives-list div:nth-child(2) {
+  background:  url("./images/icons8-beach-96.png") no-repeat center top;
+}
+.prespectives-list div:nth-child(3) {
+  background:  url("./images/icons8-launch-96.png") no-repeat center top;
+}
+
+.prespectives-list div {
+list-style-type: none;
+text-align: center;
+font-family: "Ubuntu";
+
+}
+
+.prespectives-list div {
+  text-align: center;
+  width: 289px;
+}
+.prespectives-list div h3 {
+  font-weight: bold;
+  margin-top: 80px;
+}
+
+/* TICKETS */
+.tickets {
+  background-color: #ecf3f8;
+  padding: 110px 0;
+
+}
+
+.tickets-title {
+  text-align: center;
+
+  font-family: "Ubuntu";
+  font-size: 30px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form input {
+  width: 320px;
+  height: 50px;
+  margin-top: 15px;
+  font-family: "Ubuntu";
+  color: #85828c;
+  padding-left: 25px;
+  border: 1px solid #bbbbbb;
+  border-radius: 5px;
+}
+.submit-btn {
+  width: 345px;
+  height: 50px;
+  border: none;
+  margin-top: 15px;
+
+}
+/* FOOTER */
+footer {
+  background-color: #164d7a;
+  padding: 70px 0;
+}
+footer p {
+  color: white;
+  font-family: "Open Sans";
+  font-size: 14px;
+  text-align: center;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 960px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    width: 720px;
+  }
+  .wrapper {
+    flex-direction: column;
+  }
+  .offer {
+    width: 100%;
+  }
+  .offer p {
+    width: auto;
+  }
+  .image {
+    display: block;
+    margin: 0 auto 70px;
+    box-sizing: border-box;
+  }
+  .prespectives-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .prespectives-list div {
+    width: auto;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 540px;
+  }
+  .prespectives-list div {
+    margin-bottom: 30px;
+  }
+
+}
+@media screen and (max-width: 567px) {
+  .container {
+    width: 90%;
+  }
+  .image {
+    width:100%;
+    height: 100%;
+  }
+  .form input {
+    width: 90%;
+  }
+  .submit-btn {
+    width: 100%;
+  }
+  .prespectives-list div {
+    margin-bottom: 30px;
+  }
+}
